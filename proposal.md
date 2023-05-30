@@ -1,11 +1,14 @@
-Project Proposal
 Project Goal and Purpose
 The goal of this project is to create an API that catalogs the entire discography of the Wu-Tang Clan, a legendary hip-hop group. The API will provide information about each song, including the song name and lyrics. Users will be able to retrieve, create, update, and delete songs from the Wu-Tang Clan discography. The purpose of this project is to offer a comprehensive and interactive resource for fans to explore and manage the Wu-Tang Clan song collection.
 
 Project Name and Description
 Project Name: Wu-Tang Discography API
+The Wu-Tang Discography API is a RESTful API that provides a comprehensive catalog of songs by the Wu-Tang Clan. It offers endpoints to retrieve song information, search for specific songs, access lyrics, create new songs, update existing songs, and delete songs.
 
-Description: The Wu-Tang Discography API is a RESTful API that provides a comprehensive catalog of songs by the Wu-Tang Clan. It offers endpoints to retrieve song information, search for specific songs, access lyrics, create new songs, update existing songs, and delete songs.
+
+3RD party API's being used:
+Spotify Web API (For Wu-tang Album and song data)
+Genius API (For lyrics)
 
 Routes and Models
 Routes:
@@ -19,6 +22,7 @@ DELETE /api/songs/:id: Deletes a specific Wu-Tang Clan song.
 Models:
 
 Song: Represents a Wu-Tang Clan song and includes attributes such as song name, release date, and associated album information.
+
 User Stories
 As a user, I should be able to retrieve a list of all Wu-Tang Clan songs by accessing the /api/songs route.
 As a user, I should be able to search for a specific Wu-Tang Clan song by its ID using the /api/songs/:id route.
@@ -35,13 +39,10 @@ Implement the /api/songs/:id/lyrics route to retrieve the lyrics for a specific 
 Implement the /api/songs route to create a new Wu-Tang Clan song.
 Implement the /api/songs/:id route to update the information of a specific Wu-Tang Clan song.
 Implement the /api/songs/:id route to delete a specific Wu-Tang Clan song.
+
 Stretch Goals
 Enable search functionality to allow users to search for Wu-Tang Clan songs by name, album, or other criteria.
 Implement pagination for the /api/songs route to handle large datasets efficiently.
 Add additional attributes to the Song model, such as song duration or featured artists, to provide more comprehensive information.
 Implement a feature to allow users to contribute and submit corrections or additional lyrics for songs.
-Repository Structure
-Create two GitHub repositories for your project:
 
-Front-end repository: This repository will contain the front-end code for your application.
-API repository: This repository will contain the code for your Wu-Tang Discography API. Create a proposal.md file in the API repository and include your project proposal in there using the provided rubric as a template.
