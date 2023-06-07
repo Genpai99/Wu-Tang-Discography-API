@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const app = express();
 const WuTangSong = require('./models/wuTangSong');
-const port = 3000;
 require('dotenv').config();
 const cors = require('cors');
 
@@ -41,6 +40,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
