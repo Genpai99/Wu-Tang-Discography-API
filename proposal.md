@@ -50,7 +50,6 @@ Stretch Goals
 
 Stretch Goals
 Enable search functionality to allow users to search for Wu-Tang Clan songs by name, album, or other criteria.
-Implement pagination for the /api/songs route to handle large datasets efficiently.
 Add additional attributes to the Song model, such as song duration or featured artists, to provide more comprehensive information.
 Implement a feature to allow users to contribute and submit corrections or additional lyrics for songs.
 Implement solo albums from individual Wu-Tang clan members.
