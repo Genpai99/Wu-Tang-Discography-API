@@ -7,6 +7,7 @@ const app = express();
 const WuTangSong = require('./models/wuTangSong');
 require('dotenv').config();
 const cors = require('cors');
+const port = process.env.PORT || 3000;
 
 
 const mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/wutang';
@@ -37,10 +38,15 @@ app.use('/api/albums', albumsRouter);
 
 app.use('/api', songsRouter);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+
+app.get('/api', (req, res) => {
+  res.send('API is running');
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server is running on port ${process.env.PORT || 3000}`);
+//app.get('*', (req, res) => {
+  //res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+//});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
