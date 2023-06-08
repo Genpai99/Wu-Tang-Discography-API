@@ -40,9 +40,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
-const port = process.env.PORT || 3000;
-const host = '0.0.0.0';
-
-app.listen(port, host, () => {
-  console.log(`Server is running on ${host}:${port}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is running on port ${process.env.PORT || 3000}`);
 });
