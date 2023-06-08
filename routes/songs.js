@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const songController = require('/Users/darious/code/Unit-2/Projects/Wu-Tang-Discography/Wu-Tang-Discography-API-Backend/controllers/songControllers.js');
+const songController = require('../controllers/songControllers.js');
 const fs = require('fs');
 const path = require('path');
 
