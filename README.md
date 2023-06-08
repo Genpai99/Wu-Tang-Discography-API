@@ -25,6 +25,10 @@ The Wu-Tang Discography API provides information about the albums and songs of t
 - Mongoose - MongoDB object modeling for Node.js
 - Axios - HTTP client for making requests to external APIs (for retrieving song lyrics)
 
+## 3rd Party APIS used
+Spotify API
+Genius API
+
 ## Getting Started
 
 To set up and run the Wu-Tang Discography API backend, follow these steps:
