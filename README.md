@@ -1,5 +1,5 @@
 # Wu-Tang-Discography-API
-# Wu-Tang Discography API - Backend
+# Wu-Tang Discography API 
 
 The Wu-Tang Discography API provides information about the albums and songs of the Wu-Tang Clan. It allows users to retrieve album details, song lyrics, and perform CRUD operations on albums and songs.
 
